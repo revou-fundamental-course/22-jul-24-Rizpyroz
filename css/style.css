@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    background-image: url(/Background.png);
     padding: 10px 0;
     text-align: center;
 }
@@ -225,7 +224,6 @@ section {
 
 /* Testimonials Section */
 #testimonials {
-    background-image: url(/Background\(1\).png);
     padding: 20px;
 }
 
@@ -248,7 +246,6 @@ section {
 
 /* Footer Styling */
 footer {
-    background: url(/Background.png);
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
