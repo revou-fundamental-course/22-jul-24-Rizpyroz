@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+header {
+    background-image: url(/Background.png);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the edges */
+    padding: 0 20px; /* Optional: adjust padding as needed */
+}
+
+.header-logo {
+    margin-right: 20px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.header-logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 225px;
+    display: inline-block;
+    background: linear-gradient(to left, #0b3877, #0546b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+li{
+    display: inline-block;
+    background: linear-gradient(to left, #05ebc8, #00ff1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+nav {
+    justify-content: flex-end;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.package-container {
+    padding: 0 20px;
+}
+
+.package-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+    color: white;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.package-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.package-icon {
+    margin-bottom: 15px;
+}
+
+.package-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.item-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.item-content {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* CSS for input fields */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style for the form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Style for form labels */
+form label {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style for form button */
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .package-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package-item {
+        width: 80%;
+    }
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar menutupi seluruh area slide */
+}
+
+/* Advertisement Section */
+#ad-container {
+    background-color: #f8d7da;
+    color: #721c24;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-image: url(/Background\(1\).png);
+    padding: 20px;
+}
+
+.testimonial-container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.testimonial span {
+    display: block;
+    font-style: italic;
+    color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    background: url(/Background.png);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+}
